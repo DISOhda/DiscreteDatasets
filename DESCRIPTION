@@ -1,0 +1,18 @@
+Package: DiscreteDatasets
+Type: Package
+Title: Example Datasets for Use with Discrete Statistical Tests
+Version: 0.1.0
+Authors@R: c(
+  person("Christina", "Kihn", role = c("aut", "ctb")),
+  person("Sebastian", "Döhler", role = c("aut", "ctb")),
+  person("Florian", "Junge", role = "aut"),
+  person("Darmstadt Institute of Statistics and Operations Research", email = "diso.fbmn@h-da.de", role = "cre"))
+Maintainer: Darmstadt Institute of Statistics and Operations Research <diso.fbmn@h-da.de>
+Description: Provides several datasets for use with discrete statistical tests and discrete multiple testing procedures.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.0)
+URL: https://github.com/DISOhda/DiscreteDatasets
+BugReports: https://github.com/DISOhda/DiscreteDatasets/issues
+RoxygenNote: 7.2.3
