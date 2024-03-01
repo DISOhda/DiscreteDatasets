@@ -20,7 +20,6 @@ build_table <- function(dat, new, insert_at, cn_new, cn_pre, cn_pst, cn_sep) {
 }
 
 
-
 #' @title
 #' Reconstruct a set of four-fold tables from rows or columns
 #'
