@@ -20,7 +20,6 @@ build_table <- function(dat, new, insert_at, cn_new, cn_pre, cn_pst, cn_sep) {
 }
 
 
-
 #' @title
 #' Reconstruct a set of four-fold tables from rows or columns
 #'
@@ -70,7 +69,7 @@ build_table <- function(dat, new, insert_at, cn_new, cn_pre, cn_pst, cn_sep) {
 #'                            \code{colnames_append = NULL}, \code{c("A", "B")}
 #'                            will be used.
 #' @param colnames_sep        a single character or \code{NULL} (the default)
-#'                            giving the seperator for combining
+#'                            giving the separator for combining
 #'                            \code{colnames_prepend} and \code{colnames_append}
 #'                            with the column names.
 #'

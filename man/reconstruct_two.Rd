@@ -58,7 +58,7 @@ the same manner for the reconstructed columns; if
 will be used.}
 
 \item{colnames_sep}{a single character or \code{NULL} (the default)
-giving the seperator for combining
+giving the separator for combining
 \code{colnames_prepend} and \code{colnames_append}
 with the column names.}
 }

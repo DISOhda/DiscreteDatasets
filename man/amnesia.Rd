@@ -68,7 +68,7 @@ this way, the actual contents of the table are purely numeric.
 }
 \references{
 R. Heller and H. Gur (2011). False discovery rate controlling procedures for
-   discrete tests. arXiv preprint arXiv:1112.4627v2
+   discrete tests. arXiv pre-print arXiv:1112.4627v2
    \href{https://arxiv.org/abs/1112.4627v2}{link}.
 }
 \keyword{datasets}
