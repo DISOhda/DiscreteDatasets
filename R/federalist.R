@@ -5,7 +5,7 @@
 #'
 #' @description
 #'
-#' Author assignments and counts of the 1500 most common
+#' Author assignments and counts of the 1,500 most common
 #' words from "The Federalist" articles.
 #'
 #' "The Federalist Papers" are a set of 85 articles written under the pseudonym
@@ -29,20 +29,20 @@
 #'    \item{Remove the texts by Jay, one text coauthored by
 #'         Madison and Hamilton together, and the redundant
 #'         version of article 70,}
-#'    \item{Find the 1500 most common words for each author,}
+#'    \item{Find the 1,500 most common words for each author,}
 #'    \item{Count the occurrences of these words in the texts.}
 #' }
 #'
 #' @usage data("federalist")
 #'
 #' @format
-#' \code{federalist} is a \code{data.frame} with 77 rows and 1984
+#' \code{federalist} is a \code{data.frame} with 77 rows and 1,984
 #' columns:
 #' \describe{
-#'   \item{\code{doc_no}}{Article number}
-#'   \item{\code{doc_author}}{Author of the article (according to Project
+#'   \item{doc_no}{Article number}
+#'   \item{doc_author}{Author of the article (according to Project
 #'         Gutenberg)}
-#'   \item{\code{...}}{The remaining 1982 columns are the word counts}
+#'   \item{...}{The remaining 1,982 columns are the word counts}
 #' }
 #'
 #' @references
