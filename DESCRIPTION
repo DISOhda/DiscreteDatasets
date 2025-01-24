@@ -1,14 +1,13 @@
 Package: DiscreteDatasets
 Type: Package
 Title: Example Data Sets for Use with Discrete Statistical Tests
-Version: 0.1.1
-Date: 2024-05-28
+Version: 0.1.2
+Date: 2025-01-24
 Authors@R: c(
   person("Christina", "Kihn", role = "aut"),
   person("Sebastian", "Döhler", role = "aut"),
   person("Florian", "Junge", email = "diso.fbmn@h-da.de", role = c("cre", "aut")),
   person("Lukas", "Klein", role = c("ctb")))
-Maintainer: Florian Junge <diso.fbmn@h-da.de>
 Description: Provides several data sets for use with discrete statistical tests
   and discrete multiple testing procedures. Some of them are also available as a
   four-column version, so that each row represents a 2x2 table.
