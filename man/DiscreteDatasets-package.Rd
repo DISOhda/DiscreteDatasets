@@ -19,12 +19,12 @@ Useful links:
 
 }
 \author{
-\strong{Maintainer}: Florian Junge \email{diso.fbmn@h-da.de}
+\strong{Maintainer}: Florian Junge \email{diso.fbmn@h-da.de} (\href{https://orcid.org/0009-0001-6856-6938}{ORCID})
 
 Authors:
 \itemize{
   \item Christina Kihn
-  \item Sebastian Döhler
+  \item Sebastian Döhler \email{sebastian.doehler@h-da.de} (\href{https://orcid.org/0000-0002-0321-6355}{ORCID})
 }
 
 Other contributors:
