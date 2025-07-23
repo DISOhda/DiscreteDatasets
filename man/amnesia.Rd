@@ -34,7 +34,7 @@ representing drugs with the following four columns:
                                          reactions reported for all other
                                          drugs.}
 }
-Thus, each line describes a 2x2 table:
+Thus, each line describes a 2x2 table, e.g.:
 \tabular{rcc}{
   1-ANDROSTENEDIOL    \tab This drug      \tab All other drugs\cr
   Amnesia cases       \tab \eqn{X_{i, 1}} \tab \eqn{X_{i, 3}}\cr
@@ -50,9 +50,9 @@ data("amnesia")
 data("amnesia_four_columns")
 }
 \description{
-For each of 2,446 drugs in the MHRA database (column 1), the number of cases
-with amnesia as an adverse event (column 2), and the number of cases with
-other adverse event for this drug (column 3). In total, 684,652 adverse drug
+For each of 2,446 drugs in the MHRA database, the number of cases with
+amnesia as an adverse event (column 1), and the number of cases with other
+adverse event for this drug (column 2). In total, 684,652 adverse drug
 reactions were reported, among them 2,044 cases of amnesia.
 }
 \details{
