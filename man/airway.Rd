@@ -34,8 +34,8 @@ representing genes with the following four columns:
                               untreated samples.}
   \item{Treatment.AllOtherGenes}{Number of reads for all other genes in all
                                  treated samples.}
-  \item{NoTreatment.AllOtherGenes}{Number of reads for tall other genes in
                                    all untreated samples.}
+\item{NoTreatment.AllOtherGenes}{Number of reads for all other genes in
 }
 Thus, each line describes a 2x2 table, e.g.:
 \tabular{rcc}{
