@@ -8,8 +8,8 @@
 A data frame with 315 rows representing a base sequence with the
 following 2 columns:
 \describe{
-  \item{\code{observed frequencies}}{Observed coverage of each base}
-  \item{\code{expected frequencies}}{Expected coverage of each base}
+\item{\code{observed frequencies}}{Observed coverage of each base}
+\item{\code{expected frequencies}}{Expected coverage of each base}
 }
 }
 \usage{
@@ -35,8 +35,8 @@ de Uña-Álvarez and Pardo-Fernández. See references for more details.
 }
 \references{
 Jiménez-Otero N, de Uña-Álvarez J, Pardo-Fernández JC (2019). Goodness-of-fit
-   tests for disorder detection in NGS experiments.
-   \emph{Biometrical Journal}, \strong{61}(2), pp. 424-441.
-   \doi{10.1002/bimj.201700284}.
+tests for disorder detection in NGS experiments.
+\emph{Biometrical Journal}, \\strong{61}(2), pp. 424-441.
+\doi{10.1002/bimj.201700284}.
 }
 \keyword{datasets}

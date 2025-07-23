@@ -38,9 +38,9 @@
 #' @references
 #' Lister, R., O'Malley, R., Tonti-Filippini, J., Gregory, B. D., Berry, C. C.,
 #'    Millar, A. H. & Ecker, J. R. (2008). Highly integrated single-base
-#'    resolution maps of the epigenome in arabidopsis, \emph{Cell}
-#'    \strong{133}(3), pp. 523-536.
-#'    \doi{https://doi.org/10.1016/j.cell.2008.03.029}
+#'    resolution maps of the epigenome in arabidopsis, *Cell* **133**(3),
+#'    pp. 523-536.
+#'    \doi{10.1016/j.cell.2008.03.029}
 #'
 #' @keywords datasets
 "listerdata"

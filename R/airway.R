@@ -35,8 +35,8 @@
 #'    Johnson, M., Panettieri, R. Jr., Tantisira, K. G., Weiss, S. T., Lu, Q.
 #'    (2014). RNA-Seq Transcriptome Profiling Identifies CRISPLD2 as a
 #'    Glucocorticoid Responsive Gene that Modulates Cytokine Function in Airway
-#'    Smooth Muscle Cells. \emph{PLoS One} \strong{9}(6).
-#'    \doi{https://doi.org/10.1371/journal.pone.0099625}
+#'    Smooth Muscle Cells. *PLoS One* **9**(6).
+#'    \doi{10.1371/journal.pone.0099625}
 #'
 #' @keywords datasets
 "airway"

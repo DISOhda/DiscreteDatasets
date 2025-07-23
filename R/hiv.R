@@ -35,7 +35,7 @@
 #' @references
 #' Gilbert, P. B. (2005). A modified false discovery rate multiple-comparisons
 #'    procedure for discrete data, applied to human immunodeficiency virus
-#'    genetics. \emph{Journal of the Royal Statistical Society}, \strong{54}(1),
+#'    genetics. *Journal of the Royal Statistical Society*, **54**(1),
 #'    pp. 143-158. \doi{10.1111/j.1467-9876.2005.00475.x}
 #'
 #' @keywords datasets

@@ -13,35 +13,35 @@ corresponds to a specific gene and each column to a labeled sample.
 \code{airway_treat} is a \code{data.frame} with 63,677 rows representing
 genes with the following two columns:
 \describe{
-  \item{Treatment}{Number of reads for the specific gene in all treated
-                   samples.}
-  \item{NoTreatment}{Number of reads for the specific gene in all untreated
-                     samples.}
+\item{Treatment}{Number of reads for the specific gene in all treated
+samples.}
+\item{NoTreatment}{Number of reads for the specific gene in all untreated
+samples.}
 }
 Thus, each line describes a 2x2 table, e.g.:
 \tabular{rcc}{
-  ENSG00000000003 \tab This gene      \tab All other genes\cr
-  Treatment       \tab \eqn{X_{i, 1}} \tab 89,561,179 - \eqn{X_{i, 1}}\cr
-  No Treatment    \tab \eqn{X_{i, 2}} \tab 85,955,244 - \eqn{X_{i, 2}}
+ENSG00000000003 \tab This gene      \tab All other genes\cr
+Treatment       \tab \eqn{X_{i, 1}} \tab 89,561,179 - \eqn{X_{i, 1}}\cr
+No Treatment    \tab \eqn{X_{i, 2}} \tab 85,955,244 - \eqn{X_{i, 2}}
 }
 
 \code{airway_four_columns} is a \code{data.frame} with 63,677 rows
 representing genes with the following four columns:
 \describe{
-  \item{Treatment.ThisGene}{Number of reads for the specific gene in all
-                            treated samples.}
-  \item{NoTreatment.ThisGene}{Number of reads for the specific gene in all
-                              untreated samples.}
-  \item{Treatment.AllOtherGenes}{Number of reads for all other genes in all
-                                 treated samples.}
-                                   all untreated samples.}
+\item{Treatment.ThisGene}{Number of reads for the specific gene in all
+treated samples.}
+\item{NoTreatment.ThisGene}{Number of reads for the specific gene in all
+untreated samples.}
+\item{Treatment.AllOtherGenes}{Number of reads for all other genes in all
+treated samples.}
 \item{NoTreatment.AllOtherGenes}{Number of reads for all other genes in
+all untreated samples.}
 }
 Thus, each line describes a 2x2 table, e.g.:
 \tabular{rcc}{
-  ENSG00000000003 \tab This gene      \tab All other genes\cr
-  Treatment       \tab \eqn{X_{i, 1}} \tab \eqn{X_{i, 3}}\cr
-  No Treatment    \tab \eqn{X_{i, 2}} \tab \eqn{X_{i, 4}}
+ENSG00000000003 \tab This gene      \tab All other genes\cr
+Treatment       \tab \eqn{X_{i, 1}} \tab \eqn{X_{i, 3}}\cr
+No Treatment    \tab \eqn{X_{i, 2}} \tab \eqn{X_{i, 4}}
 }
 }
 \source{
@@ -72,11 +72,11 @@ contains the raw numeric data.
 }
 \references{
 Himes, B. E., Jiang, X., Wagner, P., Hu, R., Wang, Q., Klanderman, B.,
-   Whitaker, R. M., Duan, Q., Lasky-Su, J., Nikolos, C., Jester, W.,
-   Johnson, M., Panettieri, R. Jr., Tantisira, K. G., Weiss, S. T., Lu, Q.
-   (2014). RNA-Seq Transcriptome Profiling Identifies CRISPLD2 as a
-   Glucocorticoid Responsive Gene that Modulates Cytokine Function in Airway
-   Smooth Muscle Cells. \emph{PLoS One} \strong{9}(6).
-   \doi{https://doi.org/10.1371/journal.pone.0099625}
+Whitaker, R. M., Duan, Q., Lasky-Su, J., Nikolos, C., Jester, W.,
+Johnson, M., Panettieri, R. Jr., Tantisira, K. G., Weiss, S. T., Lu, Q.
+(2014). RNA-Seq Transcriptome Profiling Identifies CRISPLD2 as a
+Glucocorticoid Responsive Gene that Modulates Cytokine Function in Airway
+Smooth Muscle Cells. \emph{PLoS One} \strong{9}(6).
+\doi{10.1371/journal.pone.0099625}
 }
 \keyword{datasets}

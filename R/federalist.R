@@ -46,21 +46,21 @@
 #' }
 #'
 #' @references
-#' Watson, G. S. (1966). Review: Frederick Mosteller, David L. Wallace, 
+#' Watson, G. S. (1966). Review: Frederick Mosteller, David L. Wallace,
 #'    Inference and Disputed Authorship: The Federalist.
-#'    \emph{The Annals of Mathematical Statistics}, \strong{37}(1), 308-312.
+#'    *The Annals of Mathematical Statistics*, **37**(1), 308-312.
 #'    \doi{10.1214/aoms/1177699628}
 #'
 #' Donoho, D. L., & Kipnis, A. (2022). Higher criticism to compare two large
 #'    frequency tables, with sensitivity to possible rare and weak differences.
-#'    \emph{Annals of Statistics}, \strong{50}(3), 1447-1472.
+#'    *Annals of Statistics*, **50**(3), 1447-1472.
 #'    \doi{10.1214/21-AOS2158}
 #'
 #' Feinerer, I., & Hornik, K. (2024). tm: Text Mining Package. R package
-#'    version 0.7-15. \emph{CRAN}. \url{https://CRAN.R-project.org/package=tm}
+#'    version 0.7-15. *CRAN*. \url{https://CRAN.R-project.org/package=tm}
 #'
 #' Studyvin, J. (2024). syllogi: Collection of Data Sets for Teaching Purposes.
-#'    R package version 1.0.3. \emph{CRAN}.
+#'    R package version 1.0.3. *CRAN*.
 #'    \url{https://CRAN.R-project.org/package=syllogi}
 #' @keywords datasets
 "federalist"

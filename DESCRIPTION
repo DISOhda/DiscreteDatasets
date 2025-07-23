@@ -25,3 +25,4 @@ Imports: checkmate
 URL: https://github.com/DISOhda/DiscreteDatasets
 BugReports: https://github.com/DISOhda/DiscreteDatasets/issues
 RoxygenNote: 7.3.2
+Roxygen: list(markdown = TRUE)

@@ -5,9 +5,9 @@
 #' @docType data
 #'
 #' @description
-#' with amnesia as an adverse event (column 2), and the number of cases with
-#' other adverse event for this drug (column 3). In total, 684,652 adverse drug
 #' For each of 2,446 drugs in the MHRA database, the number of cases with
+#' amnesia as an adverse event (column 1), and the number of cases with other
+#' adverse event for this drug (column 2). In total, 684,652 adverse drug
 #' reactions were reported, among them 2,044 cases of amnesia.
 #'
 #' @usage data("amnesia")
@@ -43,8 +43,8 @@
 #'
 #' @references
 #' R. Heller and H. Gur (2011). False discovery rate controlling procedures for
-#'    discrete tests. arXiv pre-print arXiv:1112.4627v2
-#'    \href{https://arxiv.org/abs/1112.4627v2}{link}.
+#'    discrete tests. arXiv pre-print.
+#'    [arXiv:1112.4627v2](https://arxiv.org/abs/1112.4627v2)
 #'
 #' @keywords datasets
 "amnesia"
