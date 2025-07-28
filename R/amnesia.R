@@ -5,10 +5,11 @@
 #' @docType data
 #'
 #' @description
-#' For each of 2,446 drugs in the MHRA database, the number of cases with
-#' amnesia as an adverse event (column 1), and the number of cases with other
-#' adverse event for this drug (column 2). In total, 684,652 adverse drug
-#' reactions were reported, among them 2,044 cases of amnesia.
+#' For each of 2,446 drugs in the Medicines and Healthcare products Regulatory
+#' Agency (MHRA) database, the number of cases with amnesia as an adverse event,
+#' and the number of cases with other adverse event for this drug are recorded.
+#' In total, 684,652 adverse drug reactions were reported, among them 2,044
+#' cases of amnesia.
 #'
 #' @usage data("amnesia")
 #'
@@ -28,10 +29,9 @@
 #' }
 #'
 #' @details
-#' The data was collected from the Drug Analysis Prints published
-#' by the Medicines and Healthcare products Regulatory Agency (MHRA),
-#' by Heller & Gur. See references for more details.
-
+#' The data was collected by Heller & Gur from the Drug Analysis Prints,
+#' published by the MHRA. See References section for more details.
+#'
 #' @source
 #' \href{https://yellowcard.mhra.gov.uk/idaps}{Drug Analysis Prints on MHRA site}
 #'
