@@ -36,7 +36,7 @@ de Uña-Álvarez and Pardo-Fernández. See references for more details.
 \references{
 Jiménez-Otero N, de Uña-Álvarez J, Pardo-Fernández JC (2019). Goodness-of-fit
 tests for disorder detection in NGS experiments.
-\emph{Biometrical Journal}, \\strong{61}(2), pp. 424-441.
+\emph{Biometrical Journal}, \strong{61}(2), pp. 424-441.
 \doi{10.1002/bimj.201700284}.
 }
 \keyword{datasets}
