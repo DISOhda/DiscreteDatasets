@@ -10,14 +10,26 @@
 #' data("airway")
 #'
 #' @format
-#' \code{airway} is a \code{data.frame} with 63,677 rows and 8 columns. Each row
-#' corresponds to a specific gene and each column to a labeled sample.
+#' \code{airway} is a \code{data.frame} with 63,677 rows and 2 columns. Each row
+#' corresponds to a specific gene and each column to treatment and control
+#' groups:
+#' \describe{
+#'   \item{Treatment}{Number of reads for the specific gene in all treated
+#'                    samples.}
+#'   \item{Control}{Number of reads for the specific gene in all untreated
+#'                  samples.}
+#' }
+#' Thus, each line describes a 2x2 table, e.g.:
+#' \tabular{rcc}{
+#'   ENSG00000000003 \tab This gene      \tab All other genes\cr
+#'   Treatment       \tab \eqn{X_{i, 1}} \tab 89,561,179 - \eqn{X_{i, 1}}\cr
+#'   Control         \tab \eqn{X_{i, 2}} \tab 85,955,244 - \eqn{X_{i, 2}}
+#' }
 #'
 #' @details
-#' The cell lines of the even-numbered samples were treated with dexamethasone,
-#' whereas the cell lines of the odd-numbered samples were not. There were
-#' 89,561,179 reads for all treated samples and 85,955,244 for the untreated
-#' ones.
+#' The cell lines of the treatment samples were treated with dexamethasone,
+#' whereas the cell lines of the control samples were not. There were 89,561,179
+#' reads for all treated samples and 85,955,244 for the untreated ones.
 #'
 #' @source
 #' FASTQ files from SRA, phenotypic data from GEO
@@ -27,7 +39,8 @@
 #' \code{\link[airway:airway]{airway}} BioConductor package. Since the original
 #' data would require other BioConductor packages to access it, it has been
 #' reformatted to a standard data frame (with \code{assay(airway)}) which only
-#' contains the raw numeric data.
+#' contains the raw numeric data of eight samples. These were then merged into
+#' treatment and non-treatment groups.
 #'
 #' @references
 #' Himes, B. E., Jiang, X., Wagner, P., Hu, R., Wang, Q., Klanderman, B.,
@@ -43,27 +56,6 @@
 
 #' @rdname airway
 #'
-#' @usage data("airway_treat")
-#'
-#' @format
-#' \code{airway_treat} is a \code{data.frame} with 63,677 rows representing
-#' genes with the following two columns:
-#' \describe{
-#'   \item{Treatment}{Number of reads for the specific gene in all treated
-#'                    samples.}
-#'   \item{NoTreatment}{Number of reads for the specific gene in all untreated
-#'                      samples.}
-#' }
-#' Thus, each line describes a 2x2 table, e.g.:
-#' \tabular{rcc}{
-#'   ENSG00000000003 \tab This gene      \tab All other genes\cr
-#'   Treatment       \tab \eqn{X_{i, 1}} \tab 89,561,179 - \eqn{X_{i, 1}}\cr
-#'   No Treatment    \tab \eqn{X_{i, 2}} \tab 85,955,244 - \eqn{X_{i, 2}}
-#' }
-"airway_treat"
-
-#' @rdname airway
-#'
 #' @usage data("airway_four_columns")
 #'
 #' @format
@@ -72,17 +64,17 @@
 #' \describe{
 #'   \item{Treatment.ThisGene}{Number of reads for the specific gene in all
 #'                             treated samples.}
-#'   \item{NoTreatment.ThisGene}{Number of reads for the specific gene in all
-#'                               untreated samples.}
+#'   \item{Control.ThisGene}{Number of reads for the specific gene in all
+#'                           untreated samples.}
 #'   \item{Treatment.AllOtherGenes}{Number of reads for all other genes in all
 #'                                  treated samples.}
-#'   \item{NoTreatment.AllOtherGenes}{Number of reads for all other genes in
-#'                                    all untreated samples.}
+#'   \item{Control.AllOtherGenes}{Number of reads for all other genes in
+#'                                all untreated samples.}
 #' }
 #' Thus, each line describes a 2x2 table, e.g.:
 #' \tabular{rcc}{
 #'   ENSG00000000003 \tab This gene      \tab All other genes\cr
 #'   Treatment       \tab \eqn{X_{i, 1}} \tab \eqn{X_{i, 3}}\cr
-#'   No Treatment    \tab \eqn{X_{i, 2}} \tab \eqn{X_{i, 4}}
+#'   Control         \tab \eqn{X_{i, 2}} \tab \eqn{X_{i, 4}}
 #' }
 "airway_four_columns"
