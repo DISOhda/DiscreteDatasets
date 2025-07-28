@@ -30,6 +30,7 @@ Authors:
 Other contributors:
 \itemize{
   \item Lukas Klein (\href{https://orcid.org/0000-0002-1413-497X}{ORCID}) [contributor]
+  \item Iqraa Meah [contributor]
 }
 
 }
