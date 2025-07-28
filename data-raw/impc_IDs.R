@@ -48,12 +48,15 @@ dat %>% filter(date_of_experiment < "2015-11-17") %>% count(parameter_stable_id,
 num <- rjson::fromJSON(paste(readLines("https://www.ebi.ac.uk/mi/impc/solr/experiment/select?q=phenotyping_center:*%20AND%20pipeline_stable_id:*%20AND%20procedure_stable_id:*%20AND%20parameter_stable_id:*%20AND%20observation_type:categorical%20AND%20biological_sample_group:*%20AND%20sex:*%20AND%20procedure_group:*&rows=0"), collapse = ""))$response$numFound
 dat_cat <- read.csv(paste0("https://www.ebi.ac.uk/mi/impc/solr/experiment/select?q=phenotyping_center:*%20AND%20pipeline_stable_id:*%20AND%20procedure_stable_id:*%20AND%20parameter_stable_id:*%20AND%20observation_type:categorical%20AND%20biological_sample_group:*%20AND%20sex:*%20AND%20procedure_group:*&rows=", num, "&wt=csv"))
 
+
+dat_cat <- readRDS("~/IMPC_cat.RData")
+
 aggregated <- dat_cat %>%
   filter(
-    #date_of_experiment < "2016-11-17",
-    #phenotyping_center == "MRC Harwell",
-    #pipeline_stable_id == "HRWL_001",
-    #procedure_group == "IMPC_CSD"
+    date_of_experiment < "2015-12-02",
+    phenotyping_center == "MRC Harwell",
+    pipeline_stable_id == "HRWL_001",
+    procedure_group == "IMPC_CSD",
     sex %in% c("female", "male")
   ) %>%
   count(phenotyping_center, parameter_stable_id, gene_symbol, biological_sample_group, sex, category) %>%
@@ -68,4 +71,7 @@ aggregated <- dat_cat %>%
     any(sex == "male"),
     .by = c(phenotyping_center, parameter_stable_id, gene_symbol, biological_sample_group)
   ) %>%
-  filter(startsWith(parameter_stable_id, "IMPC_CSD_003"))
+  filter(
+    n > 3,
+    startsWith(parameter_stable_id, "IMPC_CSD_003")
+  )

@@ -3,9 +3,9 @@
 \docType{data}
 \name{impc2015_excerpt}
 \alias{impc2015_excerpt}
-\title{Aggregated data of the International Mouse Phenotyping Consortium}
+\title{Excerpt of aggregated data of the International Mouse Phenotyping Consortium}
 \format{
-\code{impc2015_excerpt} is a \code{data.frame} with 3,000 rows representing
+\code{impc2015_excerpt} is a \code{data.frame} with 5,000 rows representing
 experiments with the following ten columns:
 \describe{
 \item{Organisation.Name}{Name of the phenotyping organisation that
@@ -27,7 +27,7 @@ exhibiting abnormalities}
 \item{Male.Mutant.Atypical}{Number of female mice in the experimental group
 exhibiting abnormalities}
 }
-Thus, each line describes two 2x2 tables for each sex, e.g.:
+Thus, each line describes two 2x2 tables (one for each sex), e.g.:
 \tabular{rcc}{
 Female mice        \tab Typical        \tab With abnormalities\cr
 Control group      \tab \eqn{X_{i, 3}} \tab \eqn{X_{i, 5}}\cr
@@ -41,7 +41,7 @@ Experimental group \tab \eqn{X_{i, 8}} \tab \eqn{X_{i, 10}}
 }
 }
 \source{
-\href{https://zenodo.org/records/260398}{Dataset of Karp et al. (2017)}
+\href{https://zenodo.org/records/260398}{Dataset of Karp et al. (2017)}\cr
 \href{https://www.mousephenotype.org/data}{IMPC data}
 }
 \usage{
@@ -56,9 +56,9 @@ and its role e.g. in disease in order to develop new research approaches and
 therapies. For this, standardised data is collected and freely accessible
 via the consortium's website (see Source section)
 
-This dataset contains an excerpt of the results of 3,000 aggregated
-experiments on male and female mice about 856 knockout genes, conducted by
-10 different phenotyping centers up to december 1, 2015.
+This dataset contains an excerpt of the results of 5,000 aggregated
+experiments on male and female mice about 1,100 knockout genes, conducted by
+10 different phenotyping centers up to December 2015.
 }
 \details{
 This data is derived from a dataset used in Karp et al. (2017) (see
