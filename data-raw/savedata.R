@@ -23,21 +23,6 @@
 #
 # usethis::use_data(amnesia_four_columns, overwrite = TRUE)
 
-# data("airway", package = "airway")
-# airway <- as.data.frame(assay(airway))
-# usethis::use_data(airway, overwrite = TRUE)
-
-# airway_treat <- as.data.frame(
-#   cbind(
-#     Treatment   = rowSums(airway[2 * 1:4 - 1]),
-#     NoTreatment = rowSums(airway[2 * 1:4])
-#   )
-# )
-# usethis::use_data(airway_treat, overwrite = TRUE)
-
-# airway_four_columns <- reconstruct_two(airway_treat, colnames_append = c("ThisGene", "AllOtherGenes"), colnames_sep = ".")
-# usethis::use_data(airway_four_columns, overwrite = TRUE)
-
 # data("listerdata", package = "fdrDiscreteNull")
 # listerdata <- as.data.frame(listerdata)
 # for(i in 1:2) listerdata[, i] <- as.integer(listerdata[, i])
