@@ -1,8 +1,8 @@
 Package: DiscreteDatasets
 Type: Package
 Title: Example Data Sets for Use with Discrete Statistical Tests
-Version: 0.1.2-250728
-Date: 2025-07-28
+Version: 0.1.2-250812
+Date: 2025-08-12
 Authors@R: c(
     person("Christina", "Kihn", role = "aut"),
     person("Sebastian", "Döhler", role = "aut",
@@ -13,7 +13,8 @@ Authors@R: c(
            comment = c(ORCID = "0009-0001-6856-6938")),
     person("Lukas", "Klein", role = "ctb",
            comment = c(ORCID = "0000-0002-1413-497X")),
-    person("Iqraa", "Meah", role = "ctb")
+    person("Iqraa", "Meah", role = "ctb",
+           comment = c(ORCID = "0000-0003-0519-8039"))
   )
 Description: Provides several data sets for use with discrete statistical tests
   and discrete multiple testing procedures.
