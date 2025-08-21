@@ -4,19 +4,23 @@
 load("data-raw/impc2015.RData")
 
 # find first 5.000 rows such that distribution of phenotyping centers is preserved
-k <- 9999
-n <- table(IMPC_sel$Organisation.Name)
-m <- round(n / sum(n) * k) # sum = 10.000
-orgs  <- unique(IMPC_sel$Organisation.Name)
-idx_orgs <- lapply(orgs, function(org) which(IMPC_sel$Organisation.Name == org))
-rows <- idx_orgs |>
-  seq_along() |>
-  lapply(function(i) idx_orgs[[i]][seq_len(m[i])]) |>
-  unlist() |>
-  sort()
+k <- 5000
+##l <- 3000 # first 3000 rows must be included for reproducibility of paper
+#n <- table(IMPC_sel$Organisation.Name)
+#m <- round(n / sum(n) * k)
+#orgs  <- unique(IMPC_sel$Organisation.Name)
+#idx_orgs <- lapply(orgs, function(org) which(IMPC_sel$Organisation.Name == org))
+rows <- seq_len(k) # idx_orgs |>
+#  seq_along() |>
+#  lapply(function(i) idx_orgs[[i]][seq_len(m[i])]) |>
+#  unlist() |>
+#  sort()
 
 # select rows and keep only organisations, genes and numbers
 impc2015_excerpt <- IMPC_sel[rows, -(2:5)]
+
+# check if distribution of organisations is preserved
+chisq.test(table(impc2015_excerpt$Organisation.Name), p = n/sum(n))
 
 # check if distribution of genes is also preserved
 p_full <- prop.table(table(IMPC_sel$Gene.Symbol))
@@ -25,7 +29,6 @@ p_sel[] <- 0
 genes <- sort(unique(impc2015_excerpt$Gene.Symbol))
 p_sel[genes] <- (table(impc2015_excerpt$Gene.Symbol))
 chisq.test(p_sel, p = p_full)            # distribution not preserved
-chisq.test(p_sel / sum(m), p = p_full)   # distribution roughly preserved
 
 # save final dataset in data folder
 usethis::use_data(impc2015_excerpt, overwrite = TRUE)
