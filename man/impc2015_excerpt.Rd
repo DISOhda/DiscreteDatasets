@@ -11,33 +11,33 @@ experiments with the following ten columns:
 \item{Organisation.Name}{Name of the phenotyping organisation that
 conducted the experiment}
 \item{Gene.Symbol}{Name of the relevant knockout gene}
-\item{Female.Control.Typical}{Number of typical female mice in the control
+\item{Female.Mutant.Atypical}{Number of female mice in the experimental
+group exhibiting abnormalities}
+\item{Female.Mutant.Typical}{Number of female mice in the experimental
 group}
 \item{Female.Control.Atypical}{Number of female mice in the control group
 exhibiting abnormalities}
-\item{Female.Mutant.Typical}{Number of female mice in the experimental
+\item{Female.Control.Typical}{Number of typical female mice in the control
 group}
-\item{Female.Mutant.Atypical}{Number of female mice in the experimental
-group exhibiting abnormalities}
-\item{Male.Control.Typical}{Number of typical male mice in the control
-group}
-\item{Male.Control.Atypical}{Number of male mice in the control group
-exhibiting abnormalities}
-\item{Male.Mutant.Typical}{Number of male mice in the experimental group}
 \item{Male.Mutant.Atypical}{Number of female mice in the experimental group
 exhibiting abnormalities}
+\item{Male.Mutant.Typical}{Number of male mice in the experimental group}
+\item{Male.Control.Atypical}{Number of male mice in the control group
+exhibiting abnormalities}
+\item{Male.Control.Typical}{Number of typical male mice in the control
+group}
 }
 Thus, each line describes two 2x2 tables (one for each sex), e.g.:
 \tabular{rcc}{
-Female mice        \tab Typical        \tab With abnormalities\cr
-Control group      \tab \eqn{X_{i, 3}} \tab \eqn{X_{i, 5}}\cr
-Experimental group \tab \eqn{X_{i, 4}} \tab \eqn{X_{i, 6}}
+Female mice        \tab With abnormalities \tab Typical\cr
+Experimental group \tab \eqn{X_{i, 3}}     \tab \eqn{X_{i, 4}}\cr
+Control group      \tab \eqn{X_{i, 5}}     \tab \eqn{X_{i, 6}}
 }
 and
 \tabular{rcc}{
-Male mice        \tab Typical        \tab With abnormalities\cr
-Control group      \tab \eqn{X_{i, 7}} \tab \eqn{X_{i,  9}}\cr
-Experimental group \tab \eqn{X_{i, 8}} \tab \eqn{X_{i, 10}}
+Male mice        \tab With abnormalities \tab Typical\cr
+Experimental group \tab \eqn{X_{i, 7}}     \tab \eqn{X_{i,  8}}\cr
+Control group      \tab \eqn{X_{i, 9}}     \tab \eqn{X_{i, 10}}
 }
 }
 \source{
@@ -57,7 +57,7 @@ therapies. For this, standardised data is collected and freely accessible
 via the consortium's website (see Source section)
 
 This dataset contains an excerpt of the results of 5,000 aggregated
-experiments on male and female mice about 1,100 knockout genes, conducted by
+experiments on male and female mice about 1,692 knockout genes, conducted by
 10 different phenotyping centers up to December 2015.
 }
 \details{
