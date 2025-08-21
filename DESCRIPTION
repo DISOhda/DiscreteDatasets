@@ -1,8 +1,8 @@
 Package: DiscreteDatasets
 Type: Package
 Title: Example Data Sets for Use with Discrete Statistical Tests
-Version: 0.1.2-250812
-Date: 2025-08-12
+Version: 0.1.2-250821
+Date: 2025-08-21
 Authors@R: c(
     person("Christina", "Kihn", role = "aut"),
     person("Sebastian", "Döhler", role = "aut",
