@@ -9,34 +9,40 @@
 \code{hiv} is a \code{data.frame} with 118 rows and the following two
 columns:
 \describe{
-\item{TypeC}{Number of test subjects with HIV type C and mutated i-th amino
-acid.}
-\item{TypeB}{Number of test subjects with HIV type B and mutated i-th amino
-acid.}
+\item{\strong{\code{TypeC}}}{
+Number of test subjects with HIV type C and mutated \emph{i}-th amino acid
+}
+\item{\strong{\code{TypeB}}}{
+Number of test subjects with HIV type B and mutated \emph{i}-th amino acid
+}
 }
 Thus, each row describes a 2x2 table:
 \tabular{rcc}{
-Subject 1 \tab Mutation       \tab No mutation\cr
-Type C    \tab \eqn{X_{i, 1}} \tab 73 - \eqn{X_{i, 1}}\cr
-Type B    \tab \eqn{X_{i, 2}} \tab 73 - \eqn{X_{i, 2}}
+Amino Acid 1 \tab Mutation       \tab No mutation \cr
+Type C       \tab \eqn{X_{i, 1}} \tab 73 - \eqn{X_{i, 1}} \cr
+Type B       \tab \eqn{X_{i, 2}} \tab 73 - \eqn{X_{i, 2}}
 }
 
 \code{hiv_four_columns} is a \code{data.frame} with 118 rows and the
 following four columns:
 \describe{
-\item{TypeC.Mutation}{Number of test subjects with HIV type C and mutated
-i-th amino acid.}
-\item{TypeB.Mutation}{Number of test subjects with HIV type B and mutated
-i-th amino acid.}
-\item{TypeC.NoMutation}{Number of test subjects with HIV type C and
-non-mutated i-th amino acid.}
-\item{TypeB.NoMutation}{Number of test subjects with HIV type B and
-non-mutated i-th amino acid.}
+\item{\strong{\code{TypeC.Mutation}}}{
+Number of test subjects with HIV type C and mutated \emph{i}-th amino acid
+}
+\item{\strong{\code{TypeB.Mutation}}}{
+Number of test subjects with HIV type B and mutated \emph{i}-th amino acid
+}
+\item{\strong{\code{TypeC.NoMutation}}}{
+Number of test subjects with HIV type C and non-mutated \emph{i}-th amino acid
+}
+\item{\strong{\code{TypeB.NoMutation}}}{
+Number of test subjects with HIV type B and non-mutated \emph{i}-th amino acid
+}
 }
 Thus, each row describes a 2x2 table:
 \tabular{rcc}{
-Subject 1 \tab mutation       \tab no mutation\cr
-Type C    \tab \eqn{X_{i, 1}} \tab \eqn{X_{i, 3}}\cr
+Subject 1 \tab mutation       \tab no mutation \cr
+Type C    \tab \eqn{X_{i, 1}} \tab \eqn{X_{i, 3}} \cr
 Type B    \tab \eqn{X_{i, 2}} \tab \eqn{X_{i, 4}}
 }
 }

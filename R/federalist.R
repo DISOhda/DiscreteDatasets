@@ -11,18 +11,17 @@
 #' "The Federalist Papers" are a set of 85 articles written under the pseudonym
 #' "Publius" to promote the ratification of the US constitution by Alexander
 #' Hamilton, James Madison and John Jay in 1787 and 1788. There are multiple
-#' sources which attribute the articles to their real
-#' authors. We use the attributions by the Project Gutenberg
-#' and the correction by the authors of the \code{syllogi} package.
-#' This task has been a popular problem in natural language
-#' processing. One of the most prominent examples is the work by Mosteller
-#' and Wallace (1964) who used the word frequencies to attribute the
-#' disputed articles to their authors.
+#' sources which attribute the articles to their real authors. We use the
+#' attributions by the [Project Gutenberg](https://www.gutenberg.org/) and the
+#' correction by the authors of the `syllogi` package. This task has been a
+#' popular problem in natural language processing. One of the most prominent
+#' examples is the work by Mosteller and Wallace (1964) who used the word
+#' frequencies to attribute the disputed articles to their authors.
 #'
 #' The data provided in this package was prepared with the following steps
-#' by employing the \code{tm} package:
+#' by employing the `tm` package:
 #'  \enumerate{
-#'    \item{Load the texts from the \code{syllogi} package,}
+#'    \item{Load the texts from the `syllogi` package,}
 #'    \item{Lowercase,}
 #'    \item{Remove punctuation,}
 #'    \item{Strip whitespace,}
@@ -33,34 +32,39 @@
 #'    \item{Count the occurrences of these words in the texts.}
 #' }
 #'
-#' @usage data("federalist")
+#' @usage
+#' data("federalist")
 #'
 #' @format
-#' \code{federalist} is a \code{data.frame} with 77 rows and 1,984
-#' columns:
+#' `federalist` is a `data.frame` with 77 rows and 1,984 columns:
 #' \describe{
-#'   \item{doc_no}{Article number}
-#'   \item{doc_author}{Author of the article (according to Project
-#'         Gutenberg)}
-#'   \item{...}{The remaining 1,982 columns are the word counts}
+#'   \item{**`doc_no`**}{
+#'     Article number
+#'   }
+#'   \item{**`doc_author`**}{
+#'     Author of the article, according to Project Gutenberg
+#'   }
+#'   \item{**`...`**}{
+#'     The remaining 1,982 columns are the word counts
+#'   }
 #' }
 #'
 #' @references
 #' Watson, G. S. (1966). Review: Frederick Mosteller, David L. Wallace,
-#'    Inference and Disputed Authorship: The Federalist.
-#'    *The Annals of Mathematical Statistics*, **37**(1), 308-312.
-#'    \doi{10.1214/aoms/1177699628}
+#'   Inference and Disputed Authorship: The Federalist.
+#'   *The Annals of Mathematical Statistics*, **37**(1), 308-312.
+#'   \doi{10.1214/aoms/1177699628}
 #'
 #' Donoho, D. L., & Kipnis, A. (2022). Higher criticism to compare two large
-#'    frequency tables, with sensitivity to possible rare and weak differences.
-#'    *Annals of Statistics*, **50**(3), 1447-1472.
-#'    \doi{10.1214/21-AOS2158}
+#'   frequency tables, with sensitivity to possible rare and weak differences.
+#'   *Annals of Statistics*, **50**(3), 1447-1472.
+#'   \doi{10.1214/21-AOS2158}
 #'
 #' Feinerer, I., & Hornik, K. (2024). tm: Text Mining Package. R package
-#'    version 0.7-15. *CRAN*. \url{https://CRAN.R-project.org/package=tm}
+#'   version 0.7-15. *CRAN*. <https://CRAN.R-project.org/package=tm>
 #'
 #' Studyvin, J. (2024). syllogi: Collection of Data Sets for Teaching Purposes.
-#'    R package version 1.0.3. *CRAN*.
-#'    \url{https://CRAN.R-project.org/package=syllogi}
+#'   R package version 1.0.3. *CRAN*.
+#'   <https://CRAN.R-project.org/package=syllogi>
 #' @keywords datasets
 "federalist"

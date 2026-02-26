@@ -10,34 +10,40 @@
 corresponds to a specific gene and each column to treatment and control
 groups:
 \describe{
-\item{Treatment}{Number of reads for the specific gene in all treated
-samples.}
-\item{Control}{Number of reads for the specific gene in all untreated
-samples.}
+\item{\strong{\code{Treatment}}}{
+Number of reads for the specific gene in all treated samples
+}
+\item{\strong{\code{Control}}}{
+Number of reads for the specific gene in all untreated samples
+}
 }
 Thus, each line describes a 2x2 table, e.g.:
 \tabular{rcc}{
-ENSG00000000003 \tab This gene      \tab All other genes\cr
-Treatment       \tab \eqn{X_{i, 1}} \tab 89,561,179 - \eqn{X_{i, 1}}\cr
+ENSG00000000003 \tab This gene      \tab All other genes \cr
+Treatment       \tab \eqn{X_{i, 1}} \tab 89,561,179 - \eqn{X_{i, 1}} \cr
 Control         \tab \eqn{X_{i, 2}} \tab 85,955,244 - \eqn{X_{i, 2}}
 }
 
-\code{airway_four_columns} is a \code{data.frame} with 63,677 rows
-representing genes with the following four columns:
+\code{airway_four_columns} is a \code{data.frame} with 63,677 rows representing genes
+with the following four columns:
 \describe{
-\item{Treatment.ThisGene}{Number of reads for the specific gene in all
-treated samples.}
-\item{Control.ThisGene}{Number of reads for the specific gene in all
-untreated samples.}
-\item{Treatment.AllOtherGenes}{Number of reads for all other genes in all
-treated samples.}
-\item{Control.AllOtherGenes}{Number of reads for all other genes in
-all untreated samples.}
+\item{\strong{\code{Treatment.ThisGene}}}{
+Number of reads for the specific gene in all treated samples
+}
+\item{\strong{\code{Control.ThisGene}}}{
+Number of reads for the specific gene in all untreated samples
+}
+\item{\strong{\code{Treatment.AllOtherGenes}}}{
+Number of reads for all other genes in all treated samples
+}
+\item{\strong{\code{Control.AllOtherGenes}}}{
+Number of reads for all other genes in all untreated samples
+}
 }
 Thus, each line describes a 2x2 table, e.g.:
 \tabular{rcc}{
-ENSG00000000003 \tab This gene      \tab All other genes\cr
-Treatment       \tab \eqn{X_{i, 1}} \tab \eqn{X_{i, 3}}\cr
+ENSG00000000003 \tab This gene      \tab All other genes \cr
+Treatment       \tab \eqn{X_{i, 1}} \tab \eqn{X_{i, 3}} \cr
 Control         \tab \eqn{X_{i, 2}} \tab \eqn{X_{i, 4}}
 }
 }
@@ -59,8 +65,8 @@ reads for all treated samples and 85,955,244 for the untreated ones.
 }
 \note{
 The original \code{airway} dataset has been taken from the
-\code{\link[airway:airway]{airway}} BioConductor package. Since the original
-data would require other BioConductor packages to access it, it has been
+\code{\link[airway:airway]{airway}} BioConductor package. Since the original data
+would require other BioConductor packages to access it, it has been
 reformatted to a standard data frame (with \code{assay(airway)}) which only
 contains the raw numeric data of eight samples. These were then merged into
 treatment and non-treatment groups.

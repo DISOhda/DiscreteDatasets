@@ -24,43 +24,41 @@ columns; real numbers will be coerced to integer.}
 \item{totals}{integer vector of exactly one or two values or
 \code{NULL} (the default); the new columns will be
 derived by subtracting the existing column values
-from \code{totals}; if \code{NULL}, the sums of
-the two existing columns of \code{dat} are used.}
+from \code{totals}; if \code{NULL}, the sums of the two
+existing columns of \code{dat} are used.}
 
 \item{insert_at}{integer vector of exactly two values between 1 and
-4 or \code{NULL} (the default) indicating the
-indices at which the values are to be inserted; if
-\code{NULL}, the new values are appended at the
-end, i.e. at positions 3 and 4.}
+4 or \code{NULL} (the default) indicating the indices
+at which the values are to be inserted; if \code{NULL},
+the new values are appended at the end, i.e. at
+positions 3 and 4.}
 
 \item{colnames_add}{character vector of exactly two unique character
-strings or \code{NULL} (the default), which
-contains the desired headers of the new
-(reconstructed) columns of the input; if
-\code{NULL}, the headers of \code{dat} are used
-(with appended strings; see below).}
+strings or \code{NULL} (the default), which contains
+the desired headers of the new (reconstructed)
+columns of the input; if \code{NULL}, the headers of
+\code{dat} are used (with appended strings; see below).}
 
 \item{colnames_prepend}{character vector of exactly two unique character
-strings (\code{NA}s are allowed) or \code{NULL}
-(the default); the first string will be prepended
-to the headers of the original headers of
-\code{dat}, while the second is used in
-the same manner for the reconstructed columns.}
+strings (\code{NA}s are allowed) or \code{NULL} (the
+default); the first string will be prepended to
+the original headers of \code{dat}, while the second is
+used in the same manner for the new
+(reconstructed) columns.}
 
 \item{colnames_append}{character vector of exactly two unique character
-strings (\code{NA}s are allowed) or \code{NULL}
-(the default); the first string will be appended
-to the headers of the original headers of
-\code{dat}, while the second is used in
-the same manner for the reconstructed columns; if
+strings (\code{NA}s are allowed) or \code{NULL} (the
+default); the first string will be appended to the
+original headers of \code{dat}, while the second is
+used in the same manner for the new
+(reconstructed) columns; if both
 \code{colnames_add = NULL} and
-\code{colnames_append = NULL}, \code{c("A", "B")}
-will be used.}
+\code{colnames_append = NULL}, \code{c("A", "B")} will be
+used.}
 
-\item{colnames_sep}{a single character or \code{NULL} (the default)
-giving the separator for combining
-\code{colnames_prepend} and \code{colnames_append}
-with the column names.}
+\item{colnames_sep}{a single character or \code{NULL} (the default) giving
+the separator for combining \code{colnames_prepend} and
+\code{colnames_append} with the column names.}
 }
 \value{
 An integer data frame with four columns.
@@ -70,9 +68,9 @@ In some situations, fourfold tables are reduced to two elements, which makes
 it impossible to use them straight away for statistical tests like Fisher's
 exact test. But sometimes, when all tables had the same known marginal sums,
 the missing values can be restored using that additional information. The
-\code{reconstruct_two} function uses a set of such reduced tables, stored
-row-wise in a matrix or a data frame, and rebuilds the two missing columns
-from automatically computed or given marginal totals.
+\code{reconstruct_two} function uses a set of such reduced tables, stored row-wise
+in a matrix or a data frame, and rebuilds the two missing columns from
+automatically computed or given marginal totals.
 }
 \examples{
 data(amnesia)

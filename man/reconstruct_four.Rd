@@ -13,17 +13,16 @@ columns; each row represents the first column of a
 be computed and appended to \code{dat} as two new
 columns; real numbers will be coerced to integer.}
 
-\item{idx_marginals}{integer vector of exactly two values or
-\code{NULL} (the default) indicating the columns
-of \code{dat} that contain the marginal totals;
-if \code{NULL}, the last two columns are used.}
+\item{idx_marginals}{integer vector of exactly two values or \code{NULL}
+(the default) indicating the columns of \code{dat} that
+contain the marginal totals; if \code{NULL}, the last
+two columns are used.}
 
 \item{colnames_add}{character vector of exactly two unique character
-strings or \code{NULL} (the default), which
-contains the desired headers of the new
-(reconstructed) columns of the input; if
-\code{NULL}, the headers of the marginal totals
-are used.}
+strings or \code{NULL} (the default), which contains
+the desired headers of the new (reconstructed)
+columns of the input; if \code{NULL}, the headers of
+the marginal totals are used.}
 }
 \value{
 An integer data frame with four columns.
@@ -32,10 +31,10 @@ An integer data frame with four columns.
 Sometimes, fourfold tables are reformatted by replacing rows or columns by
 marginal totals. This makes it impossible to use them straight away for
 statistical tests like Fisher's exact test. But with that knowledge, the
-missing values can easily be restored. The \code{reconstruct_four}
-function uses a set of such reduced tables, stored row-wise in a matrix or a
-data frame, and rebuilds the two reformatted cells when they were replaced by
-marginal totals.
+missing values can easily be restored. The \code{reconstruct_four} function uses a
+set of such reduced tables, stored row-wise in a matrix or a data frame, and
+rebuilds the two reformatted cells when they were replaced by marginal
+totals.
 }
 \examples{
 X1 <- c(4, 2, 2, 14, 6, 9, 4, 0, 1)

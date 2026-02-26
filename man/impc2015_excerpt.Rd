@@ -5,56 +5,77 @@
 \alias{impc2015_excerpt}
 \title{Excerpt of aggregated data of the International Mouse Phenotyping Consortium}
 \format{
-\code{impc2015_excerpt} is a \code{data.frame} with 5,000 rows representing
-experiments with the following ten columns:
+\code{impc2015_excerpt} is a \code{data.frame} with 5,000 rows representing experiments
+with the following ten columns:
 \describe{
-\item{Organisation.Name}{Name of the phenotyping organisation that
-conducted the experiment}
-\item{Gene.Symbol}{Name of the relevant knockout gene}
-\item{Female.Mutant.Atypical}{Number of female mice in the experimental
-group exhibiting abnormalities}
-\item{Female.Mutant.Typical}{Number of female mice in the experimental
-group}
-\item{Female.Control.Atypical}{Number of female mice in the control group
-exhibiting abnormalities}
-\item{Female.Control.Typical}{Number of typical female mice in the control
-group}
-\item{Male.Mutant.Atypical}{Number of female mice in the experimental group
-exhibiting abnormalities}
-\item{Male.Mutant.Typical}{Number of male mice in the experimental group}
-\item{Male.Control.Atypical}{Number of male mice in the control group
-exhibiting abnormalities}
-\item{Male.Control.Typical}{Number of typical male mice in the control
-group}
+\item{\strong{\code{Organisation.Name}}}{
+Name of the phenotyping organisation that conducted the experiment
+}
+\item{\strong{\code{Gene.Symbol}}}{
+Name of the relevant knockout gene
+}
+\item{\strong{\code{Female.Mutant.Atypical}}}{
+Number of female mice in the experimental group
+\strong{exhibiting abnormalities}
+}
+\item{\strong{\code{Female.Mutant.Typical}}}{
+Number of \strong{typical} female mice in the experimental group
+}
+\item{\strong{\code{Female.Control.Atypical}}}{
+Number of female mice in the control group
+\strong{exhibiting abnormalities}
+}
+\item{\strong{\code{Female.Control.Typical}}}{
+Number of \strong{typical} female mice in the control group
+}
+\item{\strong{\code{Male.Mutant.Atypical}}}{
+Number of female mice in the experimental group
+\strong{exhibiting abnormalities}
+}
+\item{\strong{\code{Male.Mutant.Typical}}}{
+Number of \strong{typical} male mice in the experimental group
+}
+\item{\strong{\code{Male.Control.Atypical}}}{
+Number of male mice in the control group \strong{exhibiting abnormalities}
+}
+\item{\strong{\code{Male.Control.Typical}}}{
+Number of \strong{typical} male mice in the control group
+}
 }
 Thus, each line describes two 2x2 tables (one for each sex), e.g.:
 \tabular{rcc}{
-Female mice        \tab With abnormalities \tab Typical\cr
-Experimental group \tab \eqn{X_{i, 3}}     \tab \eqn{X_{i, 4}}\cr
+Female mice        \tab With abnormalities \tab Typical \cr
+Experimental group \tab \eqn{X_{i, 3}}     \tab \eqn{X_{i, 4}} \cr
 Control group      \tab \eqn{X_{i, 5}}     \tab \eqn{X_{i, 6}}
 }
 and
 \tabular{rcc}{
-Male mice        \tab With abnormalities \tab Typical\cr
-Experimental group \tab \eqn{X_{i, 7}}     \tab \eqn{X_{i,  8}}\cr
+Male mice          \tab With abnormalities \tab Typical \cr
+Experimental group \tab \eqn{X_{i, 7}}     \tab \eqn{X_{i,  8}} \cr
 Control group      \tab \eqn{X_{i, 9}}     \tab \eqn{X_{i, 10}}
 }
 }
 \source{
-\href{https://zenodo.org/records/260398}{Dataset of Karp et al. (2017)}\cr
+\href{https://zenodo.org/records/260398}{Dataset of Karp et al. (2017)} \cr
 \href{https://www.mousephenotype.org/data}{IMPC data}
 }
 \usage{
 data("impc2015_excerpt")
 }
 \description{
-The \strong{International Mouse Phenotyping Consortium} (IMPC) aims to analyse the
-phenotypes of the mouse to create a comprehensive functional catalogue of its
-genome. This is to be achieved by generating knockout mouse lines for every
-protein-encoding gene. The ultimate goal is to gain insight in gene function
-and its role e.g. in disease in order to develop new research approaches and
-therapies. For this, standardised data is collected and freely accessible
-via the consortium's website (see Source section)
+The \strong{International Mouse Phenotyping Consortium} (IMPC) aims to identify
+the function of every gene in the mouse genome. It spearheads the whole
+process from lab studies to data distribution. The collected data is
+standardised and freely accessible via the consortium's website (see \emph{Source}
+section).
+
+For each protein-encoding gene
+of interest, an \emph{in vivo} study takes place to obtain mutant and non-mutant
+mice, the mutant mice being the one where a specific gene is knocked out at
+the embryo stage. A wide range of phenotypic traits covering multiple
+physiological systems, such as visual and neurological phenotypes, are then
+measured in these mice to better understand the biological function of the
+knocked-out gene.
 
 This dataset contains an excerpt of the results of 5,000 aggregated
 experiments on male and female mice about 1,692 knockout genes, conducted by

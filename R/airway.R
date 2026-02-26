@@ -10,19 +10,21 @@
 #' data("airway")
 #'
 #' @format
-#' \code{airway} is a \code{data.frame} with 63,677 rows and 2 columns. Each row
+#' `airway` is a `data.frame` with 63,677 rows and 2 columns. Each row
 #' corresponds to a specific gene and each column to treatment and control
 #' groups:
 #' \describe{
-#'   \item{Treatment}{Number of reads for the specific gene in all treated
-#'                    samples.}
-#'   \item{Control}{Number of reads for the specific gene in all untreated
-#'                  samples.}
+#'   \item{**`Treatment`**}{
+#'     Number of reads for the specific gene in all treated samples
+#'   }
+#'   \item{**`Control`**}{
+#'     Number of reads for the specific gene in all untreated samples
+#'   }
 #' }
 #' Thus, each line describes a 2x2 table, e.g.:
 #' \tabular{rcc}{
-#'   ENSG00000000003 \tab This gene      \tab All other genes\cr
-#'   Treatment       \tab \eqn{X_{i, 1}} \tab 89,561,179 - \eqn{X_{i, 1}}\cr
+#'   ENSG00000000003 \tab This gene      \tab All other genes \cr
+#'   Treatment       \tab \eqn{X_{i, 1}} \tab 89,561,179 - \eqn{X_{i, 1}} \cr
 #'   Control         \tab \eqn{X_{i, 2}} \tab 85,955,244 - \eqn{X_{i, 2}}
 #' }
 #'
@@ -35,21 +37,21 @@
 #' FASTQ files from SRA, phenotypic data from GEO
 #'
 #' @note
-#' The original \code{airway} dataset has been taken from the
-#' \code{\link[airway:airway]{airway}} BioConductor package. Since the original
-#' data would require other BioConductor packages to access it, it has been
-#' reformatted to a standard data frame (with \code{assay(airway)}) which only
+#' The original `airway` dataset has been taken from the
+#' [`airway`][airway::airway] BioConductor package. Since the original data
+#' would require other BioConductor packages to access it, it has been
+#' reformatted to a standard data frame (with `assay(airway)`) which only
 #' contains the raw numeric data of eight samples. These were then merged into
 #' treatment and non-treatment groups.
 #'
 #' @references
 #' Himes, B. E., Jiang, X., Wagner, P., Hu, R., Wang, Q., Klanderman, B.,
-#'    Whitaker, R. M., Duan, Q., Lasky-Su, J., Nikolos, C., Jester, W.,
-#'    Johnson, M., Panettieri, R. Jr., Tantisira, K. G., Weiss, S. T., Lu, Q.
-#'    (2014). RNA-Seq Transcriptome Profiling Identifies CRISPLD2 as a
-#'    Glucocorticoid Responsive Gene that Modulates Cytokine Function in Airway
-#'    Smooth Muscle Cells. *PLoS One* **9**(6).
-#'    \doi{10.1371/journal.pone.0099625}
+#'   Whitaker, R. M., Duan, Q., Lasky-Su, J., Nikolos, C., Jester, W.,
+#'   Johnson, M., Panettieri, R. Jr., Tantisira, K. G., Weiss, S. T., Lu, Q.
+#'   (2014). RNA-Seq Transcriptome Profiling Identifies CRISPLD2 as a
+#'   Glucocorticoid Responsive Gene that Modulates Cytokine Function in Airway
+#'   Smooth Muscle Cells. *PLoS One* **9**(6).
+#'   \doi{10.1371/journal.pone.0099625}
 #'
 #' @keywords datasets
 "airway"
@@ -59,22 +61,26 @@
 #' @usage data("airway_four_columns")
 #'
 #' @format
-#' \code{airway_four_columns} is a \code{data.frame} with 63,677 rows
-#' representing genes with the following four columns:
+#' `airway_four_columns` is a `data.frame` with 63,677 rows representing genes
+#' with the following four columns:
 #' \describe{
-#'   \item{Treatment.ThisGene}{Number of reads for the specific gene in all
-#'                             treated samples.}
-#'   \item{Control.ThisGene}{Number of reads for the specific gene in all
-#'                           untreated samples.}
-#'   \item{Treatment.AllOtherGenes}{Number of reads for all other genes in all
-#'                                  treated samples.}
-#'   \item{Control.AllOtherGenes}{Number of reads for all other genes in
-#'                                all untreated samples.}
+#'   \item{**`Treatment.ThisGene`**}{
+#'     Number of reads for the specific gene in all treated samples
+#'   }
+#'   \item{**`Control.ThisGene`**}{
+#'     Number of reads for the specific gene in all untreated samples
+#'   }
+#'   \item{**`Treatment.AllOtherGenes`**}{
+#'     Number of reads for all other genes in all treated samples
+#'   }
+#'   \item{**`Control.AllOtherGenes`**}{
+#'     Number of reads for all other genes in all untreated samples
+#'   }
 #' }
 #' Thus, each line describes a 2x2 table, e.g.:
 #' \tabular{rcc}{
-#'   ENSG00000000003 \tab This gene      \tab All other genes\cr
-#'   Treatment       \tab \eqn{X_{i, 1}} \tab \eqn{X_{i, 3}}\cr
+#'   ENSG00000000003 \tab This gene      \tab All other genes \cr
+#'   Treatment       \tab \eqn{X_{i, 1}} \tab \eqn{X_{i, 3}} \cr
 #'   Control         \tab \eqn{X_{i, 2}} \tab \eqn{X_{i, 4}}
 #' }
 "airway_four_columns"

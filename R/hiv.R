@@ -12,31 +12,33 @@
 #' @usage data("hiv")
 #'
 #' @format
-#' \code{hiv} is a \code{data.frame} with 118 rows and the following two
+#' `hiv` is a `data.frame` with 118 rows and the following two
 #' columns:
 #' \describe{
-#'   \item{TypeC}{Number of test subjects with HIV type C and mutated i-th amino
-#'                acid.}
-#'   \item{TypeB}{Number of test subjects with HIV type B and mutated i-th amino
-#'                acid.}
+#'   \item{**`TypeC`**}{
+#'     Number of test subjects with HIV type C and mutated *i*-th amino acid
+#'   }
+#'   \item{**`TypeB`**}{
+#'     Number of test subjects with HIV type B and mutated *i*-th amino acid
+#'   }
 #' }
 #' Thus, each row describes a 2x2 table:
 #' \tabular{rcc}{
-#'   Subject 1 \tab Mutation       \tab No mutation\cr
-#'   Type C    \tab \eqn{X_{i, 1}} \tab 73 - \eqn{X_{i, 1}}\cr
-#'   Type B    \tab \eqn{X_{i, 2}} \tab 73 - \eqn{X_{i, 2}}
+#'   Amino Acid 1 \tab Mutation       \tab No mutation \cr
+#'   Type C       \tab \eqn{X_{i, 1}} \tab 73 - \eqn{X_{i, 1}} \cr
+#'   Type B       \tab \eqn{X_{i, 2}} \tab 73 - \eqn{X_{i, 2}}
 #' }
 #'
 #' @note
-#' The original \code{hiv} dataset has been taken from the
-#' \code{\link[fdrDiscreteNull:hivdata]{fdrDiscreteNull}} package, where it is
-#' named \code{hivdata}.
+#' The original `hiv` dataset has been taken from the
+#' [`fdrDiscreteNull`][fdrDiscreteNull::hivdata] package, where it is
+#' named `hivdata`.
 #'
 #' @references
 #' Gilbert, P. B. (2005). A modified false discovery rate multiple-comparisons
-#'    procedure for discrete data, applied to human immunodeficiency virus
-#'    genetics. *Journal of the Royal Statistical Society*, **54**(1),
-#'    pp. 143-158. \doi{10.1111/j.1467-9876.2005.00475.x}
+#'   procedure for discrete data, applied to human immunodeficiency virus
+#'   genetics. *Journal of the Royal Statistical Society*, **54**(1),
+#'   pp. 143-158. \doi{10.1111/j.1467-9876.2005.00475.x}
 #'
 #' @keywords datasets
 "hiv"
@@ -46,22 +48,26 @@
 #' @usage data("hiv_four_columns")
 #'
 #' @format
-#' \code{hiv_four_columns} is a \code{data.frame} with 118 rows and the
+#' `hiv_four_columns` is a `data.frame` with 118 rows and the
 #' following four columns:
 #' \describe{
-#'   \item{TypeC.Mutation}{Number of test subjects with HIV type C and mutated
-#'                         i-th amino acid.}
-#'   \item{TypeB.Mutation}{Number of test subjects with HIV type B and mutated
-#'                         i-th amino acid.}
-#'   \item{TypeC.NoMutation}{Number of test subjects with HIV type C and
-#'                           non-mutated i-th amino acid.}
-#'   \item{TypeB.NoMutation}{Number of test subjects with HIV type B and
-#'                           non-mutated i-th amino acid.}
+#'   \item{**`TypeC.Mutation`**}{
+#'     Number of test subjects with HIV type C and mutated *i*-th amino acid
+#'   }
+#'   \item{**`TypeB.Mutation`**}{
+#'     Number of test subjects with HIV type B and mutated *i*-th amino acid
+#'   }
+#'   \item{**`TypeC.NoMutation`**}{
+#'     Number of test subjects with HIV type C and non-mutated *i*-th amino acid
+#'   }
+#'   \item{**`TypeB.NoMutation`**}{
+#'     Number of test subjects with HIV type B and non-mutated *i*-th amino acid
+#'   }
 #' }
 #' Thus, each row describes a 2x2 table:
 #' \tabular{rcc}{
-#'   Subject 1 \tab mutation       \tab no mutation\cr
-#'   Type C    \tab \eqn{X_{i, 1}} \tab \eqn{X_{i, 3}}\cr
+#'   Subject 1 \tab mutation       \tab no mutation \cr
+#'   Type C    \tab \eqn{X_{i, 1}} \tab \eqn{X_{i, 3}} \cr
 #'   Type B    \tab \eqn{X_{i, 2}} \tab \eqn{X_{i, 4}}
 #' }
 "hiv_four_columns"

@@ -5,13 +5,17 @@
 \alias{federalist}
 \title{The Federalist Papers word count data}
 \format{
-\code{federalist} is a \code{data.frame} with 77 rows and 1,984
-columns:
+\code{federalist} is a \code{data.frame} with 77 rows and 1,984 columns:
 \describe{
-\item{doc_no}{Article number}
-\item{doc_author}{Author of the article (according to Project
-Gutenberg)}
-\item{...}{The remaining 1,982 columns are the word counts}
+\item{\strong{\code{doc_no}}}{
+Article number
+}
+\item{\strong{\code{doc_author}}}{
+Author of the article, according to Project Gutenberg
+}
+\item{\strong{\code{...}}}{
+The remaining 1,982 columns are the word counts
+}
 }
 }
 \usage{
@@ -24,13 +28,12 @@ words from "The Federalist" articles.
 "The Federalist Papers" are a set of 85 articles written under the pseudonym
 "Publius" to promote the ratification of the US constitution by Alexander
 Hamilton, James Madison and John Jay in 1787 and 1788. There are multiple
-sources which attribute the articles to their real
-authors. We use the attributions by the Project Gutenberg
-and the correction by the authors of the \code{syllogi} package.
-This task has been a popular problem in natural language
-processing. One of the most prominent examples is the work by Mosteller
-and Wallace (1964) who used the word frequencies to attribute the
-disputed articles to their authors.
+sources which attribute the articles to their real authors. We use the
+attributions by the \href{https://www.gutenberg.org/}{Project Gutenberg} and the
+correction by the authors of the \code{syllogi} package. This task has been a
+popular problem in natural language processing. One of the most prominent
+examples is the work by Mosteller and Wallace (1964) who used the word
+frequencies to attribute the disputed articles to their authors.
 
 The data provided in this package was prepared with the following steps
 by employing the \code{tm} package:

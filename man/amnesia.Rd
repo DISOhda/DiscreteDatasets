@@ -7,37 +7,41 @@
 \title{Amnesia and other drug reactions in the MHRA pharmacovigilance spontaneous
 reporting system}
 \format{
-\code{amnesia} is a \code{data.frame} with 2,446 rows representing drugs
-with the following two columns:
+\code{amnesia} is a \code{data.frame} with 2,446 rows representing drugs with the
+following two columns:
 \describe{
-\item{AmnesiaCases}{Number of the amnesia cases reported for the drug.}
-\item{OtherAdverseCases}{Number of other adverse drug reactions reported
-for the drug.}
+\item{\strong{\code{AmnesiaCases}}}{
+Number of the amnesia cases reported for the drug}
+\item{\strong{\code{OtherAdverseCases}}}{
+Number of other adverse drug reactions reported for the drug}
 }
 Thus, each line describes a 2x2 table, e.g.:
 \tabular{rcc}{
-1-ANDROSTENEDIOL    \tab This drug      \tab All other drugs\cr
-Amnesia cases       \tab \eqn{X_{i, 1}} \tab 2,044   - \eqn{X_{i, 1}}\cr
+1-ANDROSTENEDIOL    \tab This drug      \tab All other drugs \cr
+Amnesia cases       \tab \eqn{X_{i, 1}} \tab 2,044   - \eqn{X_{i, 1}} \cr
 Other adverse cases \tab \eqn{X_{i, 2}} \tab 682,648 - \eqn{X_{i, 2}}
 }
 
-\code{amnesia_four_columns} is a \code{data.frame} with 2,446 rows
-representing drugs with the following four columns:
+\code{amnesia_four_columns} is a \code{data.frame} with 2,446 rows representing drugs
+with the following four columns:
 \describe{
-\item{AmnesiaCases.ThisDrug}{Number of the amnesia cases reported for the
-drug.}
-\item{AmnesiaCases.AllOtherDrugs}{Number of the amnesia cases reported for
-all other drugs.}
-\item{OtherAdverseCases.ThisDrug}{Number of other adverse drug reactions
-reported for the drug.}
-\item{OtherAdverseCases.AllOtherDrugs}{Number of other adverse drug
-reactions reported for all other
-drugs.}
+\item{\strong{\code{AmnesiaCases.ThisDrug}}}{
+Number of the amnesia cases reported for the drug
+}
+\item{\strong{\code{AmnesiaCases.AllOtherDrugs}}}{
+Number of the amnesia cases reported for all other drugs
+}
+\item{\strong{\code{OtherAdverseCases.ThisDrug}}}{
+Number of other adverse drug reactions reported for the drug
+}
+\item{\strong{\code{OtherAdverseCases.AllOtherDrugs}}}{
+Number of other adverse drug reactions reported for all other drugs
+}
 }
 Thus, each line describes a 2x2 table, e.g.:
 \tabular{rcc}{
-1-ANDROSTENEDIOL    \tab This drug      \tab All other drugs\cr
-Amnesia cases       \tab \eqn{X_{i, 1}} \tab \eqn{X_{i, 3}}\cr
+1-ANDROSTENEDIOL    \tab This drug      \tab All other drugs \cr
+Amnesia cases       \tab \eqn{X_{i, 1}} \tab \eqn{X_{i, 3}} \cr
 Other adverse cases \tab \eqn{X_{i, 2}} \tab \eqn{X_{i, 4}}
 }
 }
@@ -61,10 +65,10 @@ The data was collected by Heller & Gur from the Drug Analysis Prints,
 published by the MHRA. See References section for more details.
 }
 \note{
-The original \code{amnesia} dataset has been taken from the
-\code{discreteMTP} package, which is no longer available on CRAN. It has been
-reformatted such that the names in first column are now row descriptions;
-this way, the actual contents of the table are purely numeric.
+The original \code{amnesia} dataset has been taken from the \code{discreteMTP} package,
+which is no longer available on CRAN. It has been reformatted such that the
+names in first column are now row descriptions; this way, the actual contents
+of the table are purely numeric.
 }
 \references{
 R. Heller and H. Gur (2011). False discovery rate controlling procedures for

@@ -16,13 +16,18 @@
 #' The expected coverages in this data set were calculated using the formula for
 #' a local test without GC-correction.
 #'
-#' @usage data("disorderdetection")
+#' @usage
+#' data("disorderdetection")
 #'
 #' @format A data frame with 315 rows representing a base sequence with the
 #' following 2 columns:
 #' \describe{
-#'   \item{\code{observed frequencies}}{Observed coverage of each base}
-#'   \item{\code{expected frequencies}}{Expected coverage of each base}
+#'   \item{**`observed frequencies`**}{
+#'     Observed coverage of each base
+#'   }
+#'   \item{**`expected frequencies`**}{
+#'     Expected coverage of each base
+#'   }
 #' }
 #'
 #' @details
@@ -32,9 +37,9 @@
 #'
 #' @references
 #' Jiménez-Otero N, de Uña-Álvarez J, Pardo-Fernández JC (2019). Goodness-of-fit
-#'    tests for disorder detection in NGS experiments.
-#'    *Biometrical Journal*, **61**(2), pp. 424-441.
-#'    \doi{10.1002/bimj.201700284}.
+#'   tests for disorder detection in NGS experiments.
+#'   *Biometrical Journal*, **61**(2), pp. 424-441.
+#'   \doi{10.1002/bimj.201700284}.
 #'
 #' @keywords datasets
 "disorderdetection"

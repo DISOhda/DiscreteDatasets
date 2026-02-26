@@ -28,50 +28,48 @@ build_table <- function(dat, new, insert_at, cn_new, cn_pre, cn_pst, cn_sep) {
 #' it impossible to use them straight away for statistical tests like Fisher's
 #' exact test. But sometimes, when all tables had the same known marginal sums,
 #' the missing values can be restored using that additional information. The
-#' \code{reconstruct_two} function uses a set of such reduced tables, stored
-#' row-wise in a matrix or a data frame, and rebuilds the two missing columns
-#' from automatically computed or given marginal totals.
+#' `reconstruct_two` function uses a set of such reduced tables, stored row-wise
+#' in a matrix or a data frame, and rebuilds the two missing columns from
+#' automatically computed or given marginal totals.
 #'
 #' @param dat                 integer matrix or data frame with exactly two
 #'                            columns; each row represents the first column of a
 #'                            2x2 matrix for which the other two values are to
-#'                            be computed and appended to \code{dat} as two new
+#'                            be computed and appended to `dat` as two new
 #'                            columns; real numbers will be coerced to integer.
 #' @param totals              integer vector of exactly one or two values or
-#'                            \code{NULL} (the default); the new columns will be
+#'                            `NULL` (the default); the new columns will be
 #'                            derived by subtracting the existing column values
-#'                            from \code{totals}; if \code{NULL}, the sums of
-#'                            the two existing columns of \code{dat} are used.
+#'                            from `totals`; if `NULL`, the sums of the two
+#'                            existing columns of `dat` are used.
 #' @param insert_at           integer vector of exactly two values between 1 and
-#'                            4 or \code{NULL} (the default) indicating the
-#'                            indices at which the values are to be inserted; if
-#'                            \code{NULL}, the new values are appended at the
-#'                            end, i.e. at positions 3 and 4.
+#'                            4 or `NULL` (the default) indicating the indices
+#'                            at which the values are to be inserted; if `NULL`,
+#'                            the new values are appended at the end, i.e. at
+#'                            positions 3 and 4.
 #' @param colnames_add        character vector of exactly two unique character
-#'                            strings or \code{NULL} (the default), which
-#'                            contains the desired headers of the new
-#'                            (reconstructed) columns of the input; if
-#'                            \code{NULL}, the headers of \code{dat} are used
-#'                            (with appended strings; see below).
+#'                            strings or `NULL` (the default), which contains
+#'                            the desired headers of the new (reconstructed)
+#'                            columns of the input; if `NULL`, the headers of
+#'                            `dat` are used (with appended strings; see below).
 #' @param colnames_prepend    character vector of exactly two unique character
-#'                            strings (\code{NA}s are allowed) or \code{NULL}
-#'                            (the default); the first string will be prepended
-#'                            to the headers of the original headers of
-#'                            \code{dat}, while the second is used in
-#'                            the same manner for the reconstructed columns.
+#'                            strings (`NA`s are allowed) or `NULL` (the
+#'                            default); the first string will be prepended to
+#'                            the original headers of `dat`, while the second is
+#'                            used in the same manner for the new
+#'                            (reconstructed) columns.
 #' @param colnames_append     character vector of exactly two unique character
-#'                            strings (\code{NA}s are allowed) or \code{NULL}
-#'                            (the default); the first string will be appended
-#'                            to the headers of the original headers of
-#'                            \code{dat}, while the second is used in
-#'                            the same manner for the reconstructed columns; if
-#'                            \code{colnames_add = NULL} and
-#'                            \code{colnames_append = NULL}, \code{c("A", "B")}
-#'                            will be used.
-#' @param colnames_sep        a single character or \code{NULL} (the default)
-#'                            giving the separator for combining
-#'                            \code{colnames_prepend} and \code{colnames_append}
-#'                            with the column names.
+#'                            strings (`NA`s are allowed) or `NULL` (the
+#'                            default); the first string will be appended to the
+#'                            original headers of `dat`, while the second is
+#'                            used in the same manner for the new
+#'                            (reconstructed) columns; if both
+#'                            `colnames_add = NULL` and
+#'                            `colnames_append = NULL`, `c("A", "B")` will be
+#'                            used.
+#' @param colnames_sep        a single character or `NULL` (the default) giving
+#'                            the separator for combining `colnames_prepend` and
+#'                            `colnames_append` with the column names.
 #'
 #' @return
 #' An integer data frame with four columns.
@@ -162,7 +160,8 @@ reconstruct_two <- function(dat, totals = NULL, insert_at = NULL, colnames_add =
     colnames_add <- colnames(dat)
 
   # build reconstructed table
-  dat <- build_table(dat, new_cols, insert_at, colnames_add, colnames_prepend, colnames_append, colnames_sep)
+  dat <- build_table(dat, new_cols, insert_at, colnames_add, colnames_prepend,
+                     colnames_append, colnames_sep)
 
   return(dat)
 }
@@ -176,26 +175,25 @@ reconstruct_two <- function(dat, totals = NULL, insert_at = NULL, colnames_add =
 #' Sometimes, fourfold tables are reformatted by replacing rows or columns by
 #' marginal totals. This makes it impossible to use them straight away for
 #' statistical tests like Fisher's exact test. But with that knowledge, the
-#' missing values can easily be restored. The \code{reconstruct_four}
-#' function uses a set of such reduced tables, stored row-wise in a matrix or a
-#' data frame, and rebuilds the two reformatted cells when they were replaced by
-#' marginal totals.
+#' missing values can easily be restored. The `reconstruct_four` function uses a
+#' set of such reduced tables, stored row-wise in a matrix or a data frame, and
+#' rebuilds the two reformatted cells when they were replaced by marginal
+#' totals.
 #'
 #' @param dat                 integer matrix or data frame with exactly two
 #'                            columns; each row represents the first column of a
 #'                            2x2 matrix for which the other two values are to
-#'                            be computed and appended to \code{dat} as two new
+#'                            be computed and appended to `dat` as two new
 #'                            columns; real numbers will be coerced to integer.
-#' @param idx_marginals       integer vector of exactly two values or
-#'                            \code{NULL} (the default) indicating the columns
-#'                            of \code{dat} that contain the marginal totals;
-#'                            if \code{NULL}, the last two columns are used.
+#' @param idx_marginals       integer vector of exactly two values or `NULL`
+#'                            (the default) indicating the columns of `dat` that
+#'                            contain the marginal totals; if `NULL`, the last
+#'                            two columns are used.
 #' @param colnames_add        character vector of exactly two unique character
-#'                            strings or \code{NULL} (the default), which
-#'                            contains the desired headers of the new
-#'                            (reconstructed) columns of the input; if
-#'                            \code{NULL}, the headers of the marginal totals
-#'                            are used.
+#'                            strings or `NULL` (the default), which contains
+#'                            the desired headers of the new (reconstructed)
+#'                            columns of the input; if `NULL`, the headers of
+#'                            the marginal totals are used.
 #'
 #' @return
 #' An integer data frame with four columns.

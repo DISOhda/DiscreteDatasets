@@ -8,8 +8,12 @@
 A data frame with 315 rows representing a base sequence with the
 following 2 columns:
 \describe{
-\item{\code{observed frequencies}}{Observed coverage of each base}
-\item{\code{expected frequencies}}{Expected coverage of each base}
+\item{\strong{\verb{observed frequencies}}}{
+Observed coverage of each base
+}
+\item{\strong{\verb{expected frequencies}}}{
+Expected coverage of each base
+}
 }
 }
 \usage{
