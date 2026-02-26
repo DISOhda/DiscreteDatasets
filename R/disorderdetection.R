@@ -19,13 +19,14 @@
 #' @usage
 #' data("disorderdetection")
 #'
-#' @format A data frame with 315 rows representing a base sequence with the
+#' @format
+#' A `data frame` with 315 rows representing a base sequence with the
 #' following 2 columns:
 #' \describe{
-#'   \item{**`observed frequencies`**}{
+#'   \item{**`observed`**}{
 #'     Observed coverage of each base
 #'   }
-#'   \item{**`expected frequencies`**}{
+#'   \item{**`expected`**}{
 #'     Expected coverage of each base
 #'   }
 #' }

@@ -32,6 +32,6 @@
 # names(listerdata_four_columns) <- paste(names(listerdata), rep(c("ThisCyto", "AllOtherCytos"), rep(2, 2)), sep = ".")
 # usethis::use_data(listerdata_four_columns, overwrite = TRUE)
 
-# disorderdetection = data.frame(hu, gg)
-# colnames(disorderdetection) = c("observed frequencies", "expected frequencies")
-# usethis::use_data(disorderdetection)
+# disorderdetection <- data.frame(hu, gg)
+# colnames(disorderdetection) <- c("observed", "expected")
+# usethis::use_data(disorderdetection, overwrite = TRUE)

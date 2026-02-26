@@ -5,13 +5,13 @@
 \alias{disorderdetection}
 \title{Disorder Detection data}
 \format{
-A data frame with 315 rows representing a base sequence with the
+A \verb{data frame} with 315 rows representing a base sequence with the
 following 2 columns:
 \describe{
-\item{\strong{\verb{observed frequencies}}}{
+\item{\strong{\code{observed}}}{
 Observed coverage of each base
 }
-\item{\strong{\verb{expected frequencies}}}{
+\item{\strong{\code{expected}}}{
 Expected coverage of each base
 }
 }
