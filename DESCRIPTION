@@ -1,8 +1,8 @@
 Package: DiscreteDatasets
 Type: Package
 Title: Example Data Sets for Use with Discrete Statistical Tests
-Version: 0.1.2-250821
-Date: 2025-08-21
+Version: 0.2.0
+Date: 2026-03-03
 Authors@R: c(
     person("Christina", "Kihn", role = "aut"),
     person("Sebastian", "Döhler", role = "aut",
@@ -19,11 +19,12 @@ Authors@R: c(
 Description: Provides several data sets for use with discrete statistical tests
   and discrete multiple testing procedures.
 License: GPL-3
+Language: en-GB
 Encoding: UTF-8
 LazyData: true
 Depends: R (>= 4.0)
 Imports: checkmate
 URL: https://github.com/DISOhda/DiscreteDatasets
 BugReports: https://github.com/DISOhda/DiscreteDatasets/issues
-RoxygenNote: 7.3.2
+RoxygenNote: 7.3.3
 Roxygen: list(markdown = TRUE)
