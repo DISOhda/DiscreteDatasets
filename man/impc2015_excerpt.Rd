@@ -65,25 +65,22 @@ data("impc2015_excerpt")
 \description{
 The \strong{International Mouse Phenotyping Consortium} (IMPC) aims to identify
 the function of every gene in the mouse genome. It spearheads the whole
-process from lab studies to data distribution. The collected data is
-standardised and freely accessible via the consortium's website (see \emph{Source}
-section).
-
-For each protein-encoding gene
+process from lab studies to data distribution. For each protein-encoding gene
 of interest, an \emph{in vivo} study takes place to obtain mutant and non-mutant
 mice, the mutant mice being the one where a specific gene is knocked out at
 the embryo stage. A wide range of phenotypic traits covering multiple
 physiological systems, such as visual and neurological phenotypes, are then
 measured in these mice to better understand the biological function of the
-knocked-out gene.
+knocked-out gene. The collected data is standardised and freely accessible
+via the consortium's website (see \emph{Source} section).
 
 This dataset contains an excerpt of the results of 5,000 aggregated
 experiments on male and female mice about 1,692 knockout genes, conducted by
-10 different phenotyping centers up to December 2015.
+10 different phenotyping centres up to December 2015.
 }
 \details{
 This data is derived from a dataset used in Karp et al. (2017) (see
-References). The original data was collected by the IMPC.
+\emph{References} section). The original data was collected by the IMPC.
 }
 \references{
 N. A. Karp et al. (2017). Prevalence of sexual dimorphism in mammalian
