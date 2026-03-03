@@ -25,12 +25,12 @@ sequence get studied. The so-called coverage of each base is calculated to
 detect duplicates, deletions and insertions in the base sequence. To find
 these variations a hypothesis-test gets performed for each base in the tested
 area. The null-hypothesis being that the coverage of the base is as expected
-under the null-hypothesis (expected coverage Cb can be calculated using a
-given formula, following a poisson distribution). If the observed coverage is
-exceptionally high or low the null-hypothesis gets rejected. For each type of
-variation there is a different formula to calculate the expected coverages.
-The expected coverages in this data set were calculated using the formula for
-a local test without GC-correction.
+under the null-hypothesis (expected coverage \eqn{C_b} can be calculated
+using a given formula, following a Poisson distribution). If the observed
+coverage is exceptionally high or low the null-hypothesis gets rejected. For
+each type of variation there is a different formula to calculate the expected
+coverages. The expected coverages in this data set were calculated using the
+formula for a local test without GC-correction.
 }
 \details{
 The data was collected from the "Goodness-of-fit tests for disorder detection
