@@ -4,10 +4,10 @@
 #' @docType data
 #'
 #' @description
-#' This dataset has been analyzed and provided by the listed reference. There
+#' This dataset has been analysed and provided by the listed reference. There
 #' are around 22,000 cytosines, each of which is under two conditions. For each
 #' cytosine under each condition, there is only one replicate. The discrete
-#' count for each replicate can be modeled by binomial distribution, and
+#' count for each replicate can be modelled by binomial distribution, and
 #' Fisher's exact test can be applied to assess if a cytosine is differentially
 #' methylated. The filtered data `listerdata` contains cytosines whose total
 #' counts for both lines are greater than 5 and whose count for each line does

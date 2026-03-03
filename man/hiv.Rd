@@ -52,7 +52,7 @@ data("hiv")
 data("hiv_four_columns")
 }
 \description{
-This data set has been analyzed and provided by the listed reference.
+This data set has been analysed and provided by the listed reference.
 Examined were two groups with different types of HIV (Type B and  Type C),
 each consisting of 73 participants. Within both groups the number of
 amino-acid mutations at each position was determined.

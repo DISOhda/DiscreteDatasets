@@ -42,7 +42,7 @@ by employing the \code{tm} package:
 \item{Lowercase,}
 \item{Remove punctuation,}
 \item{Strip whitespace,}
-\item{Remove the texts by Jay, one text coauthored by
+\item{Remove the texts by Jay, one text co-authored by
 Madison and Hamilton together, and the redundant
 version of article 70,}
 \item{Find the 1,500 most common words for each author,}
